@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html
+        lang="fa"
+        data-nav-layout="vertical"
+        data-theme-mode="light"
+        data-header-styles="light"
+        data-menu-styles="light"
+        dir="rtl"
+        loader="enable"
+        data-vertical-style="overlay">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>
+        پنل مدیریت
+        | ورود یا ثبت نام
+    </title>
+
+    <meta name="csrf-token" content="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
+
+    <!-- Start::Styles -->
+
+    <!-- Choices JS -->
+    <script src="/assets/admin/js/choices.min.js"></script>
+
+    <!-- Main Theme Js -->
+    <script src="/assets/admin/js/main.js"></script>
+
+    <link href="/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
+
+    <!-- Style Css -->
+    <link href="/assets/admin/css/styles.css" rel="stylesheet">
+
+    <!-- Icons Css -->
+    <link href="/assets/admin/css/icons.css" rel="stylesheet">
+
+    <!-- Node Waves Css -->
+    <link href="/assets/admin/css/waves.min.css" rel="stylesheet">
+
+    <!-- Simplebar Css -->
+    <link href="/assets/admin/css/simplebar.min.css" rel="stylesheet">
+
+    <!-- Color Picker Css -->
+    <link rel="stylesheet" href="/assets/admin/css/nano.min.css">
+
+    <!-- Choices Css -->
+    <link rel="stylesheet" href="/assets/admin/css/choices.min.css">
+
+    <!-- FlatPickr CSS -->
+    <link rel="stylesheet" href="/assets/admin/css/flatpickr.min.css">
+
+    <!-- Auto Complete CSS -->
+    <link rel="stylesheet" href="/assets/admin/css/autoComplete.css">
+
+    <!-- Prism CSS -->
+    <link rel="stylesheet" href="/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
+
+    <link rel="stylesheet" href="/assets/admin/plugins/dropzone/dropzone.css">
+
+    <!-- Persian Datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class=" authentication-background ">
+
+<!-- Loader -->
+<div id="loader" class="d-none">
+    <img src="/assets/admin/images/media/loader.svg" alt="">
+</div>
+<!-- Loader -->
+
+<!-- page -->
+<div class="page">
+
+
+    <!-- Start::app-content -->
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center authentication authentication-basic h-100">
+            <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-6 col-sm-8 col-12">
+                <div class="card custom-card my-4 auth-circle">
+                    <div class="card-body p-5">
+                        <p class="h4 mb-3 fw-semibold text-center">
+                            ورود به پنل مدیریت
+                        </p>
+                        <p class="mb-4 text-muted text-center">
+                            برای ورود به پنل مدیریت لطفا اطلاعات فرم را وارد کنید.
+                        </p>
+                        <form method="POST" action="http://127.0.0.1:8000/admin/auth/login">
+                            <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                            <div class="row gy-3">
+                            <div class="col-xl-12">
+                                <label for="login-username" class="form-label text-default">نام کاربری</label>
+                                <input
+                                        type="text"
+                                        name="username"
+                                        class="form-control"
+                                        id="login-username"
+                                        placeholder="نام کاربری را وارد کنید"
+                                        required
+                                />
+                            </div>
+
+                            <div class="col-xl-12">
+                                <label for="login-password" class="form-label text-default">رمز عبور</label>
+                                <div class="position-relative">
+                                    <input
+                                            type="password"
+                                            name="password"
+                                            class="form-control"
+                                            id="login-password"
+                                            placeholder="رمز عبور را وارد کنید"
+                                            required
+                                    />
+                                    <a
+                                            href="javascript:void(0);"
+                                            class="show-password-button text-muted"
+                                            onclick="createpassword('login-password',this)"
+                                            id="button-addon2"
+                                    >
+                                        <i class="ri-eye-off-line align-middle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="d-grid mt-4">
+                                <button type="submit" class="btn btn-primary">ورود</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End::app-content -->
+
+
+</div>
+<!-- End Page -->
+
+<!-- Scroll To Top -->
+<div class="scrollToTop" style="display: none;">
+    <span class="arrow lh-1"><i class="ri-rocket-line align-middle fs-18"></i></span>
+</div>
+<div id="responsive-overlay"></div>
+<!-- Scroll To Top -->
+
+<!-- Persian Date Library -->
+<script src="https://cdn.jsdelivr.net/npm/persian-date/dist/persian-date.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+
+<!-- Popper JS -->
+<script src="/assets/admin/js/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="/assets/admin/js/bootstrap.bundle.min.js"></script>
+
+<!-- Defaultmenu JS -->
+<script src="/assets/admin/js/defaultmenu.js"></script>
+
+<!-- Node Waves JS -->
+<script src="/assets/admin/js/waves.min.js"></script>
+
+<!-- Sticky JS -->
+<script src="/assets/admin/js/sticky.js"></script>
+
+<!-- Color Picker JS -->
+<script src="/assets/admin/js/pickr.es5.min.js"></script>
+
+<!-- Date & Time Picker JS -->
+<script src="/assets/admin/js/flatpickr.min.js"></script>
+
+<!-- Custom-Switcher JS -->
+<script src="/assets/admin/js/custom-switcher.js"></script>
+
+<!-- Custom JS -->
+<script src="/assets/admin/js/custom.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // ===== Choices =====
+        const choicesEl = document.querySelector('#choices-single-default');
+        if (choicesEl && window.Choices) {
+
+            const choices = new Choices(choicesEl, {
+                allowHTML: true,
+                searchEnabled: false,
+                shouldSort: false,
+                itemSelectText: '',
+                placeholder: true,
+                placeholderValue: 'مرتب‌سازی بر اساس'
+            });
+            if (choicesEl) {
+                choicesEl.addEventListener('change', function () {
+                    if (this.form) this.form.submit();
+                });
+            }
+        }
+
+        // ===== ApexCharts =====
+        const charts = document.querySelectorAll(".apex-chart");
+        charts.forEach(chartEl => {
+            if (chartEl) {
+                const options = chartEl.dataset.options ? JSON.parse(chartEl.dataset.options) : {};
+                const chart = new ApexCharts(chartEl, options);
+                chart.render();
+            }
+        });
+
+        // ===== Popper Example =====
+        const popperRefs = document.querySelectorAll("[data-popper-ref]");
+        popperRefs.forEach(ref => {
+            const targetId = ref.getAttribute("data-popper-target");
+            const popperEl = document.getElementById(targetId);
+            if (popperEl) {
+                Popper.createPopper(ref, popperEl, {
+                    placement: 'bottom'
+                });
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>
