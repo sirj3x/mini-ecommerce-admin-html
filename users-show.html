@@ -7,8 +7,9 @@
         data-header-styles="light"
         data-menu-styles="light"
         dir="rtl"
+        data-vertical-style="overlay"
         loader="enable"
-        data-vertical-style="overlay">
+>
 <head>
     <!-- Meta Data -->
     <meta charset="UTF-8">
@@ -17,52 +18,50 @@
 
     <title>
         پنل مدیریت
-        | جزییات کاربر
+        | جزئیات کاربر سارا محمدی
     </title>
 
-    <meta name="csrf-token" content="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM">
-
     <!-- Favicon -->
-    <link rel="icon" href="/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://127.0.0.1:8000/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
 
     <!-- Start::Styles -->
 
     <!-- Choices JS -->
-    <script src="/assets/admin/js/choices.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/choices.min.js"></script>
 
     <!-- Main Theme Js -->
-    <script src="/assets/admin/js/main.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/main.js"></script>
 
-    <link href="/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
 
     <!-- Style Css -->
-    <link href="/assets/admin/css/styles.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/styles.css" rel="stylesheet">
 
     <!-- Icons Css -->
-    <link href="/assets/admin/css/icons.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/icons.css" rel="stylesheet">
 
     <!-- Node Waves Css -->
-    <link href="/assets/admin/css/waves.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/waves.min.css" rel="stylesheet">
 
     <!-- Simplebar Css -->
-    <link href="/assets/admin/css/simplebar.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/simplebar.min.css" rel="stylesheet">
 
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href="/assets/admin/css/nano.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/nano.min.css">
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href="/assets/admin/css/choices.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/choices.min.css">
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/flatpickr.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/flatpickr.min.css">
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/autoComplete.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/autoComplete.css">
 
     <!-- Prism CSS -->
-    <link rel="stylesheet" href="/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
 
-    <link rel="stylesheet" href="/assets/admin/plugins/dropzone/dropzone.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/dropzone/dropzone.css">
 
     <!-- Persian Datepicker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
@@ -75,8 +74,8 @@
 <body class="">
 
 <!-- Loader -->
-<div id="loader" class="d-none">
-    <img src="/assets/admin/images/media/loader.svg" alt="">
+<div id="loader">
+    <img src="http://127.0.0.1:8000/assets/admin/images/media/loader.svg" alt="">
 </div>
 <!-- Loader -->
 
@@ -125,13 +124,20 @@
                 <!-- Start::header-element -->
                 <div class="header-element header-search d-md-block d-none my-auto">
                     <div>
-                        <h1 class="page-title fw-medium fs-18 mb-2">مرتضی مرتضی</h1>
-                        <nav>
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/admin/users">کاربران</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">جزئیات کاربر</li>
-                            </ol>
-                        </nav>
+                        <div>
+                            <h1 class="page-title fw-medium fs-18 mb-2">
+                                جزئیات کاربر
+                                سارا محمدی
+                            </h1>
+                            <div class="">
+                                <nav>
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">مدیریت کاربران</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">جزئیات کاربر</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- End::header-element -->
@@ -198,22 +204,10 @@
                         <li class="p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <p class="mb-0 fw-semibold lh-1">مرتضی مهدی زاده</p>
-                                    <span class="fs-11 text-muted">mrking0151@gmail.com</span>
+                                    <p class="mb-0 fw-semibold lh-1">علی رضایی</p>
+                                    <span class="fs-11 text-muted">admin1@نمونه.com</span>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center px-3" href="/">
-                                <i class="ri-user-line fs-15 me-2 text-gray fw-normal"></i>
-                                اطلاعات پروفایل
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center px-3" href="/">
-                                <i class="ri-user-settings-line fs-15 me-2 text-gray fw-normal"></i>
-                                تنظیمات
-                            </a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
@@ -221,8 +215,10 @@
                         <li>
                             <a class="dropdown-item d-flex align-items-center text-danger px-3"
                                href="http://127.0.0.1:8000/admin/auth/logout">
-                                <i class="ri-logout-circle-line fs-15 me-2 text-danger fw-normal"
-                                   style="position: relative; top: -2px"></i>
+                                <i
+                                        class="ri-logout-circle-line fs-15 me-2 text-danger fw-normal"
+                                        style="position: relative; top: -2px"
+                                ></i>
                                 خروج
                             </a>
                         </li>
@@ -274,8 +270,8 @@
                                     </div>
                                     <ul class="main-menu mx-0">
                                         <!-- Start::slide -->
-                                        <li class="slide ">
-                                            <a href="http://127.0.0.1:8000/admin"
+                                        <li class="slide active">
+                                            <a href="http://127.0.0.1:8000/admin/dashboard"
                                                class="side-menu__item ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="1em"
                                                      height="1em" viewBox="0 0 24 24">
@@ -292,7 +288,7 @@
                                         <!-- End::slide -->
 
                                         <!-- Start::slide -->
-                                        <li class="slide active">
+                                        <li class="slide ">
                                             <a href="http://127.0.0.1:8000/admin/users"
                                                class="side-menu__item active">
 
@@ -425,162 +421,59 @@
                     <div class="card-body flex-grow-1">
                         <dl class="row mb-0">
                             <dt class="col-sm-3 my-2 fw-semibold">نام کامل:</dt>
-                            <dd class="col-sm-9 my-2">مرتضی مرتضی</dd>
+                            <dd class="col-sm-9 my-2">سارا محمدی</dd>
 
                             <dt class="col-sm-3 my-2 fw-semibold">ایمیل:</dt>
-                            <dd class="col-sm-9 my-2">mrking0151@gmail.com</dd>
+                            <dd class="col-sm-9 my-2">sara@gmail.com</dd>
 
                             <dt class="col-sm-3 my-2 fw-semibold">شماره تلفن:</dt>
-                            <dd class="col-sm-9 my-2">09333678142</dd>
+                            <dd class="col-sm-9 my-2">09120000001</dd>
 
                             <dt class="col-sm-3 my-2 fw-semibold">تاریخ ثبت‌نام:</dt>
-                            <dd class="col-sm-9 my-2">9 مرداد 1404 - 08:54</dd>
+                            <dd class="col-sm-9 my-2">16:13 1404/07/13</dd>
                         </dl>
                     </div>
-
-                    <div class="me-2">
-                        <img
-                                src="/assets/admin/images/faces/DefaultAvatar.jpg"
-                                alt="تصویر پروفایل"
-                                class="rounded-circle border border-3"
-                                style="width: 120px; height: 120px; object-fit: cover;"
-                        >
-                    </div>
                 </div>
             </div>
-
-            <!-- User Addresses Card -->
-            <div class="card custom-card mb-4">
-                <div class="card-header">
-                    <div class="card-title">آدرس‌های کاربر</div>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered text-nowrap align-middle">
-                            <thead>
-                            <tr>
-                                <th>عنوان</th>
-                                <th>آدرس</th>
-                                <th>تلفن</th>
-                                <th>کد پستی</th>
-                                <th>آدرس پیش‌فرض</th>
-                                <th>اقدامات</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>خانه</td>
-                                <td style="max-width: 300px; word-wrap: break-word;">ساری, بلوار خزر,دریای 2, کوچه بغلی</td>
-                                <td>09333678142</td>
-                                <td>45874-51474</td>
-                                <td>
-                                    <span class="badge bg-success">پیش‌فرض</span>
-                                </td>
-                                <td>
-                                    <div class="btn-list">
-                                        <a href="#"
-                                           class="btn btn-secondary-light btn-icon btn-sm"
-                                           data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                            <i class="ti ti-pencil"></i>
-                                        </a>
-                                        <form
-                                                action="#"
-                                                method="POST"
-                                                onsubmit="return confirm('آیا از حذف این آدرس مطمئن هستید؟')"
-                                                style="display: inline-block;">
-                                            <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-pink-light btn-icon btn-sm"
-                                                                                                                                                                                                                                                                                                                      data-bs-toggle="tooltip" data-bs-placement="top"
-                                                                                                                                                                                                                                                                                                                      title="حذف">
-                                            <i class="ri-delete-bin-line"></i>
-                                        </button>
-                                        </form>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>شرکت</td>
-                                <td style="max-width: 300px; word-wrap: break-word;">ساری,کمربندی غربی, شرکت درنیکا</td>
-                                <td>09333678142</td>
-                                <td>12345-56789</td>
-                                <td>
-                                    <span class="badge bg-secondary">عادی</span>
-                                </td>
-                                <td>
-                                    <div class="btn-list">
-                                        <a href="#"
-                                           class="btn btn-secondary-light btn-icon btn-sm"
-                                           data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                            <i class="ti ti-pencil"></i>
-                                        </a>
-                                        <form
-                                                action="#"
-                                                method="POST"
-                                                onsubmit="return confirm('آیا از حذف این آدرس مطمئن هستید؟')"
-                                                style="display: inline-block;">
-                                            <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-pink-light btn-icon btn-sm"
-                                                                                                                                                                                                                                                                                                                      data-bs-toggle="tooltip" data-bs-placement="top"
-                                                                                                                                                                                                                                                                                                                      title="حذف">
-                                            <i class="ri-delete-bin-line"></i>
-                                        </button>
-                                        </form>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- Orders Table -->
             <div class="row">
                 <div class="col-xl-12">
                     <div class="card custom-card mb-4">
                         <div class="card-header">
-                            <div class="card-title">سفارشات کاربر</div>
+                            <div class="card-title">سفارشات اخیر کاربر</div>
                         </div>
                         <div class="table-responsive">
                             <table class="table text-nowrap table-hover">
                                 <thead>
                                 <tr>
-                                    <th>مشتری</th>
+                                    <th>شناسه</th>
                                     <th>مبلغ</th>
                                     <th>وضعیت</th>
                                     <th>تاریخ ثبت</th>
-                                    <th>توضیحات</th>
-                                    <th>اقدامات</th>
+                                    <th>عملیات</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center gap-2">
-                                            <div class="lh-1">
-                                                <span class="avatar avatar-md bg-primary-transparent">
-                                                    م
-                                                </span>
-                                            </div>
                                             <div>
-                                                    <span
-                                                            class="fw-semibold d-block">مرتضی مهدی زاده</span>
-                                                <span class="text-muted fs-12">#123456789</span>
+                                                <span class="fw-semibold d-block">#1</span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>2,510,000 تومان</td>
                                     <td>
-                                        <span class="badge
-                                             bg-warning
-                                                                                    ">
-                                                                                            در انتظار
-                                                                                    </span>
+                                        580,000
+                                        تومان
                                     </td>
-                                    <td>18 مرداد 1404</td>
-                                    <td>لطفا نشکنه</td>
+                                    <td>
+                                        <span class="text-info">در حال پردازش</span>
+                                    </td>
+                                    <td>16:13 1404/07/13</td>
                                     <td>
                                         <div class="btn-list">
-                                            <a href="http://127.0.0.1:8000/admin/orders/1"
+                                            <a href="http://127.0.0.1:8000/admin/orders/1/show"
                                                class="btn btn-primary-light btn-icon btn-sm"
                                                data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
                                                 <i class="ri-eye-line"></i>
@@ -597,327 +490,11 @@
                                                 <i class="ri-delete-bin-line"></i>
                                             </a>
                                             <form id="delete-form-1"
-                                                  action="http://127.0.0.1:8000/admin/orders/1"
-                                                  method="POST" style="display:none;">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="lh-1">
-                                                <span class="avatar avatar-md bg-primary-transparent">
-                                                    م
-                                                </span>
-                                            </div>
-                                            <div>
-                                                    <span
-                                                            class="fw-semibold d-block">مرتضی مهدی زاده</span>
-                                                <span class="text-muted fs-12">#123456789</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>5,200,000 تومان</td>
-                                    <td>
-                                        <span class="badge
-                                             bg-warning
-                                                                                    ">
-                                                                                            در انتظار
-                                                                                    </span>
-                                    </td>
-                                    <td>22 مرداد 1404</td>
-                                    <td>یک متن تست هست لطفا سخت نگیرید</td>
-                                    <td>
-                                        <div class="btn-list">
-                                            <a href="http://127.0.0.1:8000/admin/orders/2"
-                                               class="btn btn-primary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
-                                                <i class="ri-eye-line"></i>
-                                            </a>
-                                            <a href="http://127.0.0.1:8000/admin/orders/2/edit"
-                                               class="btn btn-secondary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                                <i class="ti ti-pencil"></i>
-                                            </a>
-                                            <a href="javascript:void(0);"
-                                               onclick="if(confirm('آیا از حذف این سفارش مطمئن هستید؟')) { document.getElementById('delete-form-2').submit(); }"
-                                               class="btn btn-pink-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="حذف">
-                                                <i class="ri-delete-bin-line"></i>
-                                            </a>
-                                            <form id="delete-form-2"
-                                                  action="http://127.0.0.1:8000/admin/orders/2"
-                                                  method="POST" style="display:none;">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Purchased Products Table -->
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="card custom-card">
-                        <div class="card-header">
-                            <div class="card-title">محصولات خریداری شده</div>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="table text-nowrap table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>
-                                        <input class="form-check-input check-all" type="checkbox" id="all-products">
-                                    </th>
-                                    <th>محصول</th>
-                                    <th>دسته‌بندی</th>
-                                    <th>قیمت</th>
-                                    <th>قیمت تخفیف‌خورده</th>
-                                    <th>موجودی</th>
-                                    <th>وضعیت</th>
-                                    <th>منتشر شده</th>
-                                    <th>اقدامات</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr class="product-list">
-                                    <td class="product-checkbox">
-                                        <input class="form-check-input" type="checkbox"
-                                               value="1">
-                                    </td>
-                                    <td>
-                                        <div class="d-flex">
-                                                                                                    <span class="avatar avatar-md avatar-square bg-light">
-                                                        <img
-                                                                src="/assets/admin/images/product-default-image.png"
-                                                                class="w-100 h-100" alt="گوشی  به عنوان فیک موبایلin the type of shit"
-                                                        />
-                                                    </span>
-
-                                            <div class="ms-2 d-flex align-items-center">
-                                                <p class="fw-semibold mb-0 name-limit">
-                                                    <a href="http://127.0.0.1:8000/admin/products/1">گوشی  به عنوان فیک موبایلin the type of shit</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>موبایل</td>
-                                    <td>100,000,000 تومان</td>
-                                    <td>
-                                        <span class="text-success">50,000,000 تومان</span>
-                                    </td>
-                                    <td>50</td>
-                                    <td>
-                                        <span
-                                                class="badge bg-primary-transparent">
-                                            منتشر شد
-                                        </span>
-                                    </td>
-                                    <td>
-                                        10 مرداد 1404 - 10:50
-                                    </td>
-
-                                    <td>
-                                        <div class="hstack gap-2 fs-15">
-                                            <a href="http://127.0.0.1:8000/admin/products/1"
-                                               class="btn btn-primary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
-                                                <i class="ri-eye-line"></i>
-                                            </a>
-                                            <a href="http://127.0.0.1:8000/admin/products/1/edit"
-                                               class="btn btn-secondary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                                <i class="ti ti-pencil"></i>
-                                            </a>
-                                            <form action="http://127.0.0.1:8000/admin/products/1"
+                                                  action="http://127.0.0.1:8000/admin/orders/1/delete"
                                                   method="POST"
-                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
-                                                <i class="ri-delete-bin-line"></i>
-                                            </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="product-list">
-                                    <td class="product-checkbox">
-                                        <input class="form-check-input" type="checkbox"
-                                               value="7">
-                                    </td>
-                                    <td>
-                                        <div class="d-flex">
-                                                                                                    <span class="avatar avatar-md avatar-square bg-light">
-                                                        <img
-                                                                src="/assets/admin/images/product-default-image.png"
-                                                                class="w-100 h-100" alt="بسته شرکتی اینترنت"
-                                                        />
-                                                    </span>
-
-                                            <div class="ms-2 d-flex align-items-center">
-                                                <p class="fw-semibold mb-0 name-limit">
-                                                    <a href="http://127.0.0.1:8000/admin/products/7">بسته شرکتی اینترنت</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>موبایل</td>
-                                    <td>5,000 تومان</td>
-                                    <td>
-                                        <span class="text-muted">-</span>
-                                    </td>
-                                    <td>1</td>
-                                    <td>
-                                        <span
-                                                class="badge bg-primary-transparent">
-                                            منتشر شد
-                                        </span>
-                                    </td>
-                                    <td>
-                                        19 مرداد 1404 - 04:16
-                                    </td>
-
-                                    <td>
-                                        <div class="hstack gap-2 fs-15">
-                                            <a href="http://127.0.0.1:8000/admin/products/7"
-                                               class="btn btn-primary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
-                                                <i class="ri-eye-line"></i>
-                                            </a>
-                                            <a href="http://127.0.0.1:8000/admin/products/7/edit"
-                                               class="btn btn-secondary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                                <i class="ti ti-pencil"></i>
-                                            </a>
-                                            <form action="http://127.0.0.1:8000/admin/products/7"
-                                                  method="POST"
-                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
-                                                <i class="ri-delete-bin-line"></i>
-                                            </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="product-list">
-                                    <td class="product-checkbox">
-                                        <input class="form-check-input" type="checkbox"
-                                               value="8">
-                                    </td>
-                                    <td>
-                                        <div class="d-flex">
-                                                                                                    <span class="avatar avatar-md avatar-square bg-light">
-                                                        <img
-                                                                src="/assets/admin/images/product-default-image.png"
-                                                                class="w-100 h-100" alt="گوشی اپل iPhone 16 CH رجیستر‌شده دو سیم‌کارت 128 گیگابایت با رم 8 گیگابایت"
-                                                        />
-                                                    </span>
-
-                                            <div class="ms-2 d-flex align-items-center">
-                                                <p class="fw-semibold mb-0 name-limit">
-                                                    <a href="http://127.0.0.1:8000/admin/products/8">گوشی اپل iPhone 16 CH رجیستر‌شده دو سیم‌کارت 128 گیگابایت با رم 8 گیگابایت</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>موبایل</td>
-                                    <td>89,999,000 تومان</td>
-                                    <td>
-                                        <span class="text-success">2,000 تومان</span>
-                                    </td>
-                                    <td>8</td>
-                                    <td>
-                                        <span
-                                                class="badge bg-primary-transparent">
-                                            منتشر شد
-                                        </span>
-                                    </td>
-                                    <td>
-                                        20 مرداد 1404 - 04:16
-                                    </td>
-
-                                    <td>
-                                        <div class="hstack gap-2 fs-15">
-                                            <a href="http://127.0.0.1:8000/admin/products/8"
-                                               class="btn btn-primary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
-                                                <i class="ri-eye-line"></i>
-                                            </a>
-                                            <a href="http://127.0.0.1:8000/admin/products/8/edit"
-                                               class="btn btn-secondary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                                <i class="ti ti-pencil"></i>
-                                            </a>
-                                            <form action="http://127.0.0.1:8000/admin/products/8"
-                                                  method="POST"
-                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
-                                                <i class="ri-delete-bin-line"></i>
-                                            </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="product-list">
-                                    <td class="product-checkbox">
-                                        <input class="form-check-input" type="checkbox"
-                                               value="9">
-                                    </td>
-                                    <td>
-                                        <div class="d-flex">
-                                                                                                    <span class="avatar avatar-md avatar-square bg-light">
-                                                        <img
-                                                                src="/assets/admin/images/product-default-image.png"
-                                                                class="w-100 h-100" alt="لپ تاپ asus مدل rog"
-                                                        />
-                                                    </span>
-
-                                            <div class="ms-2 d-flex align-items-center">
-                                                <p class="fw-semibold mb-0 name-limit">
-                                                    <a href="http://127.0.0.1:8000/admin/products/9">لپ تاپ asus مدل rog</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>کالای دیجیتال</td>
-                                    <td>500,000 تومان</td>
-                                    <td>
-                                        <span class="text-success">2,000 تومان</span>
-                                    </td>
-                                    <td>10</td>
-                                    <td>
-                                        <span
-                                                class="badge bg-primary-transparent">
-                                            منتشر شد
-                                        </span>
-                                    </td>
-                                    <td>
-                                        20 مرداد 1404 - 05:46
-                                    </td>
-
-                                    <td>
-                                        <div class="hstack gap-2 fs-15">
-                                            <a href="http://127.0.0.1:8000/admin/products/9"
-                                               class="btn btn-primary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
-                                                <i class="ri-eye-line"></i>
-                                            </a>
-                                            <a href="http://127.0.0.1:8000/admin/products/9/edit"
-                                               class="btn btn-secondary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                                <i class="ti ti-pencil"></i>
-                                            </a>
-                                            <form action="http://127.0.0.1:8000/admin/products/9"
-                                                  method="POST"
-                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
-                                                <i class="ri-delete-bin-line"></i>
-                                            </button>
-                                            </form>
+                                                  style="display:none;"
+                                            >
+                                                <input type="hidden" name="_token" value="4bYZgaUXw6NRUpehNCo79sVxnGyoZdTpQMBuSG48" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                </form>
                                         </div>
                                     </td>
                                 </tr>
@@ -930,7 +507,6 @@
 
         </div>
     </div>
-
     <!-- End::app-content -->
 
     <!-- Start::main-footer -->
@@ -961,31 +537,31 @@
 <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
 
 <!-- Popper JS -->
-<script src="/assets/admin/js/popper.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/popper.min.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="/assets/admin/js/bootstrap.bundle.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/bootstrap.bundle.min.js"></script>
 
 <!-- Defaultmenu JS -->
-<script src="/assets/admin/js/defaultmenu.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/defaultmenu.js"></script>
 
 <!-- Node Waves JS -->
-<script src="/assets/admin/js/waves.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/waves.min.js"></script>
 
 <!-- Sticky JS -->
-<script src="/assets/admin/js/sticky.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/sticky.js"></script>
 
 <!-- Color Picker JS -->
-<script src="/assets/admin/js/pickr.es5.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/pickr.es5.min.js"></script>
 
 <!-- Date & Time Picker JS -->
-<script src="/assets/admin/js/flatpickr.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/flatpickr.min.js"></script>
 
 <!-- Custom-Switcher JS -->
-<script src="/assets/admin/js/custom-switcher.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom-switcher.js"></script>
 
 <!-- Custom JS -->
-<script src="/assets/admin/js/custom.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
