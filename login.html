@@ -7,8 +7,9 @@
         data-header-styles="light"
         data-menu-styles="light"
         dir="rtl"
+        data-vertical-style="overlay"
         loader="enable"
-        data-vertical-style="overlay">
+>
 <head>
     <!-- Meta Data -->
     <meta charset="UTF-8">
@@ -17,52 +18,49 @@
 
     <title>
         پنل مدیریت
-        | ورود یا ثبت نام
     </title>
 
-    <meta name="csrf-token" content="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM">
-
     <!-- Favicon -->
-    <link rel="icon" href="/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://127.0.0.1:8000/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
 
     <!-- Start::Styles -->
 
     <!-- Choices JS -->
-    <script src="/assets/admin/js/choices.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/choices.min.js"></script>
 
     <!-- Main Theme Js -->
-    <script src="/assets/admin/js/main.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/main.js"></script>
 
-    <link href="/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
 
     <!-- Style Css -->
-    <link href="/assets/admin/css/styles.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/styles.css" rel="stylesheet">
 
     <!-- Icons Css -->
-    <link href="/assets/admin/css/icons.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/icons.css" rel="stylesheet">
 
     <!-- Node Waves Css -->
-    <link href="/assets/admin/css/waves.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/waves.min.css" rel="stylesheet">
 
     <!-- Simplebar Css -->
-    <link href="/assets/admin/css/simplebar.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/simplebar.min.css" rel="stylesheet">
 
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href="/assets/admin/css/nano.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/nano.min.css">
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href="/assets/admin/css/choices.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/choices.min.css">
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/flatpickr.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/flatpickr.min.css">
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/autoComplete.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/autoComplete.css">
 
     <!-- Prism CSS -->
-    <link rel="stylesheet" href="/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
 
-    <link rel="stylesheet" href="/assets/admin/plugins/dropzone/dropzone.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/dropzone/dropzone.css">
 
     <!-- Persian Datepicker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
@@ -72,11 +70,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body class=" authentication-background ">
+<body class="authentication-background">
 
 <!-- Loader -->
-<div id="loader" class="d-none">
-    <img src="/assets/admin/images/media/loader.svg" alt="">
+<div id="loader">
+    <img src="http://127.0.0.1:8000/assets/admin/images/media/loader.svg" alt="">
 </div>
 <!-- Loader -->
 
@@ -96,19 +94,22 @@
                         <p class="mb-4 text-muted text-center">
                             برای ورود به پنل مدیریت لطفا اطلاعات فرم را وارد کنید.
                         </p>
+
+
                         <form method="POST" action="http://127.0.0.1:8000/admin/auth/login">
-                            <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                            <div class="row gy-3">
-                            <div class="col-xl-12">
-                                <label for="login-username" class="form-label text-default">نام کاربری</label>
-                                <input
-                                        type="text"
-                                        name="username"
-                                        class="form-control"
-                                        id="login-username"
-                                        placeholder="نام کاربری را وارد کنید"
-                                        required
-                                />
-                            </div>
+                            <input type="hidden" name="_token" value="VofHLLAqMD1Drv23vG8MgkBtFMjNl7t6G8gfBpxL" autocomplete="off">                            <div class="col-xl-12">
+                            <label for="login-email" class="form-label text-default">پست الکترونیکی</label>
+                            <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control"
+                                    id="login-email"
+                                    placeholder="پست الکترونیکی را وارد کنید"
+                                    value=""
+                            />
+                        </div>
+
+                            <br>
 
                             <div class="col-xl-12">
                                 <label for="login-password" class="form-label text-default">رمز عبور</label>
@@ -119,19 +120,9 @@
                                             class="form-control"
                                             id="login-password"
                                             placeholder="رمز عبور را وارد کنید"
-                                            required
                                     />
-                                    <a
-                                            href="javascript:void(0);"
-                                            class="show-password-button text-muted"
-                                            onclick="createpassword('login-password',this)"
-                                            id="button-addon2"
-                                    >
-                                        <i class="ri-eye-off-line align-middle"></i>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
 
                             <div class="d-grid mt-4">
                                 <button type="submit" class="btn btn-primary">ورود</button>
@@ -143,6 +134,7 @@
         </div>
     </div>
     <!-- End::app-content -->
+
 
 
 </div>
@@ -161,31 +153,31 @@
 <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
 
 <!-- Popper JS -->
-<script src="/assets/admin/js/popper.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/popper.min.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="/assets/admin/js/bootstrap.bundle.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/bootstrap.bundle.min.js"></script>
 
 <!-- Defaultmenu JS -->
-<script src="/assets/admin/js/defaultmenu.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/defaultmenu.js"></script>
 
 <!-- Node Waves JS -->
-<script src="/assets/admin/js/waves.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/waves.min.js"></script>
 
 <!-- Sticky JS -->
-<script src="/assets/admin/js/sticky.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/sticky.js"></script>
 
 <!-- Color Picker JS -->
-<script src="/assets/admin/js/pickr.es5.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/pickr.es5.min.js"></script>
 
 <!-- Date & Time Picker JS -->
-<script src="/assets/admin/js/flatpickr.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/flatpickr.min.js"></script>
 
 <!-- Custom-Switcher JS -->
-<script src="/assets/admin/js/custom-switcher.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom-switcher.js"></script>
 
 <!-- Custom JS -->
-<script src="/assets/admin/js/custom.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {

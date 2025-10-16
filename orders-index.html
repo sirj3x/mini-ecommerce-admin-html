@@ -7,8 +7,9 @@
         data-header-styles="light"
         data-menu-styles="light"
         dir="rtl"
+        data-vertical-style="overlay"
         loader="enable"
-        data-vertical-style="overlay">
+>
 <head>
     <!-- Meta Data -->
     <meta charset="UTF-8">
@@ -17,52 +18,50 @@
 
     <title>
         پنل مدیریت
-        | سفارشات
+        | مدیریت سفارشات
     </title>
 
-    <meta name="csrf-token" content="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM">
-
     <!-- Favicon -->
-    <link rel="icon" href="/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://127.0.0.1:8000/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
 
     <!-- Start::Styles -->
 
     <!-- Choices JS -->
-    <script src="/assets/admin/js/choices.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/choices.min.js"></script>
 
     <!-- Main Theme Js -->
-    <script src="/assets/admin/js/main.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/main.js"></script>
 
-    <link href="/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
 
     <!-- Style Css -->
-    <link href="/assets/admin/css/styles.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/styles.css" rel="stylesheet">
 
     <!-- Icons Css -->
-    <link href="/assets/admin/css/icons.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/icons.css" rel="stylesheet">
 
     <!-- Node Waves Css -->
-    <link href="/assets/admin/css/waves.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/waves.min.css" rel="stylesheet">
 
     <!-- Simplebar Css -->
-    <link href="/assets/admin/css/simplebar.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/simplebar.min.css" rel="stylesheet">
 
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href="/assets/admin/css/nano.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/nano.min.css">
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href="/assets/admin/css/choices.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/choices.min.css">
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/flatpickr.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/flatpickr.min.css">
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/autoComplete.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/autoComplete.css">
 
     <!-- Prism CSS -->
-    <link rel="stylesheet" href="/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
 
-    <link rel="stylesheet" href="/assets/admin/plugins/dropzone/dropzone.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/dropzone/dropzone.css">
 
     <!-- Persian Datepicker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
@@ -75,8 +74,8 @@
 <body class="">
 
 <!-- Loader -->
-<div id="loader" class="d-none">
-    <img src="/assets/admin/images/media/loader.svg" alt="">
+<div id="loader">
+    <img src="http://127.0.0.1:8000/assets/admin/images/media/loader.svg" alt="">
 </div>
 <!-- Loader -->
 
@@ -125,14 +124,16 @@
                 <!-- Start::header-element -->
                 <div class="header-element header-search d-md-block d-none my-auto">
                     <div>
-                        <h1 class="page-title fw-medium fs-18 mb-2">لیست سفارشات</h1>
                         <div>
-                            <nav>
-                                <ol class="breadcrumb mb-0">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">سفارشات</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">لیست سفارشات</li>
-                                </ol>
-                            </nav>
+                            <h1 class="page-title fw-medium fs-18 mb-2">لیست سفارشات</h1>
+                            <div class="">
+                                <nav>
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">مدیریت سفارشات</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">لیست سفارشات</li>
+                                    </ol>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,22 +201,10 @@
                         <li class="p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <p class="mb-0 fw-semibold lh-1">مرتضی مهدی زاده</p>
-                                    <span class="fs-11 text-muted">mrking0151@gmail.com</span>
+                                    <p class="mb-0 fw-semibold lh-1">Admin Admin</p>
+                                    <span class="fs-11 text-muted">admin@gmail.com</span>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center px-3" href="/">
-                                <i class="ri-user-line fs-15 me-2 text-gray fw-normal"></i>
-                                اطلاعات پروفایل
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center px-3" href="/">
-                                <i class="ri-user-settings-line fs-15 me-2 text-gray fw-normal"></i>
-                                تنظیمات
-                            </a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
@@ -223,8 +212,10 @@
                         <li>
                             <a class="dropdown-item d-flex align-items-center text-danger px-3"
                                href="http://127.0.0.1:8000/admin/auth/logout">
-                                <i class="ri-logout-circle-line fs-15 me-2 text-danger fw-normal"
-                                   style="position: relative; top: -2px"></i>
+                                <i
+                                        class="ri-logout-circle-line fs-15 me-2 text-danger fw-normal"
+                                        style="position: relative; top: -2px"
+                                ></i>
                                 خروج
                             </a>
                         </li>
@@ -276,8 +267,8 @@
                                     </div>
                                     <ul class="main-menu mx-0">
                                         <!-- Start::slide -->
-                                        <li class="slide ">
-                                            <a href="http://127.0.0.1:8000/admin"
+                                        <li class="slide active">
+                                            <a href="http://127.0.0.1:8000/admin/dashboard"
                                                class="side-menu__item ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="1em"
                                                      height="1em" viewBox="0 0 24 24">
@@ -312,7 +303,7 @@
                                         <!-- End::slide -->
 
                                         <!-- Start::slide -->
-                                        <li class="slide active ">
+                                        <li class="slide  ">
                                             <a href="http://127.0.0.1:8000/admin/orders"
                                                class="side-menu__item active">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="1em"
@@ -413,11 +404,8 @@
     <!-- End::main-sidebar -->
 
     <!-- Start::app-content -->
-
     <div class="main-content app-content">
         <div class="container-fluid pt-4">
-
-
 
             <!-- Filters -->
             <div class="row">
@@ -432,11 +420,11 @@
                                         <select id="choices-single-default" class="form-control" name="sort">
                                             <option value="">مرتب‌سازی بر اساس</option>
                                             <option
-                                                    value="date_desc" >
+                                                    value="created_at_desc" selected>
                                                 جدیدترین
                                             </option>
                                             <option
-                                                    value="date_asc" >
+                                                    value="created_at_asc" >
                                                 قدیمی‌ترین
                                             </option>
                                             <option
@@ -456,7 +444,9 @@
                                     <!-- Search -->
                                     <div class="d-flex" role="search">
                                         <input class="form-control me-2" type="search" name="search"
-                                               placeholder="جستجو سفارش" value="">
+                                               placeholder="جستجو سفارش"
+                                               value=""
+                                        >
                                         <button class="btn btn-light" type="submit">جستجو</button>
                                     </div>
 
@@ -475,42 +465,37 @@
                             <table class="table text-nowrap table-hover">
                                 <thead>
                                 <tr>
+                                    <th>شناسه</th>
                                     <th>مشتری</th>
                                     <th>مبلغ</th>
                                     <th>وضعیت</th>
                                     <th>تاریخ ثبت</th>
-                                    <th>توضیحات</th>
-                                    <th>اقدامات</th>
+                                    <th>عملیات</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center gap-2">
-                                            <div class="lh-1">
-                            <span class="avatar avatar-md bg-primary-transparent">
-                                م
-                            </span>
-                                            </div>
                                             <div>
-                                                <span class="fw-semibold d-block">مرتضی مهدی زاده</span>
-                                                <span class="text-muted fs-12">#123456789</span>
+                                                <span class="fw-semibold d-block">#2</span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>5,200,000 تومان</td>
                                     <td>
-                    <span class="badge
-                         bg-warning
-                                            ">
-                                                    در انتظار
-                                            </span>
+                                        مهدی هاشمی
                                     </td>
-                                    <td>22 مرداد 1404</td>
-                                    <td>یک متن تست هست لطفا سخت نگیرید</td>
+                                    <td>
+                                        79,000
+                                        تومان
+                                    </td>
+                                    <td>
+                                        <span class="text-info">در حال پردازش</span>
+                                    </td>
+                                    <td>11:34 1404/07/24</td>
                                     <td>
                                         <div class="btn-list">
-                                            <a href="http://127.0.0.1:8000/admin/orders/2"
+                                            <a href="http://127.0.0.1:8000/admin/orders/2/show"
                                                class="btn btn-primary-light btn-icon btn-sm"
                                                data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
                                                 <i class="ri-eye-line"></i>
@@ -527,39 +512,36 @@
                                                 <i class="ri-delete-bin-line"></i>
                                             </a>
                                             <form id="delete-form-2"
-                                                  action="http://127.0.0.1:8000/admin/orders/2"
-                                                  method="POST" style="display:none;">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                </form>
+                                                  action="http://127.0.0.1:8000/admin/orders/2/delete"
+                                                  method="POST"
+                                                  style="display:none;"
+                                            >
+                                                <input type="hidden" name="_token" value="VofHLLAqMD1Drv23vG8MgkBtFMjNl7t6G8gfBpxL" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                </form>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center gap-2">
-                                            <div class="lh-1">
-                            <span class="avatar avatar-md bg-primary-transparent">
-                                م
-                            </span>
-                                            </div>
                                             <div>
-                                                <span class="fw-semibold d-block">مرتضی مهدی زاده</span>
-                                                <span class="text-muted fs-12">#123456789</span>
+                                                <span class="fw-semibold d-block">#1</span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>2,510,000 تومان</td>
                                     <td>
-                    <span class="badge
-                         bg-warning
-                                            ">
-                                                    در انتظار
-                                            </span>
+                                        سارا محمدی
                                     </td>
-                                    <td>18 مرداد 1404</td>
-                                    <td>لطفا نشکنه</td>
+                                    <td>
+                                        580,000
+                                        تومان
+                                    </td>
+                                    <td>
+                                        <span class="text-info">در حال پردازش</span>
+                                    </td>
+                                    <td>16:13 1404/07/13</td>
                                     <td>
                                         <div class="btn-list">
-                                            <a href="http://127.0.0.1:8000/admin/orders/1"
+                                            <a href="http://127.0.0.1:8000/admin/orders/1/show"
                                                class="btn btn-primary-light btn-icon btn-sm"
                                                data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
                                                 <i class="ri-eye-line"></i>
@@ -576,38 +558,25 @@
                                                 <i class="ri-delete-bin-line"></i>
                                             </a>
                                             <form id="delete-form-1"
-                                                  action="http://127.0.0.1:8000/admin/orders/1"
-                                                  method="POST" style="display:none;">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                </form>
+                                                  action="http://127.0.0.1:8000/admin/orders/1/delete"
+                                                  method="POST"
+                                                  style="display:none;"
+                                            >
+                                                <input type="hidden" name="_token" value="VofHLLAqMD1Drv23vG8MgkBtFMjNl7t6G8gfBpxL" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                </form>
                                         </div>
                                     </td>
                                 </tr>
                                 </tbody>
                             </table>
-
-
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Pagination -->
-            <ul class="pagination justify-content-end">
-                <li class="page-item disabled">
-                    <a class="page-link" href="javascript:void(0);">قبلی</a>
-                </li>
-                <li class="page-item active">
-                    <a class="page-link" href="http://127.0.0.1:8000/admin/orders?page=1">1</a>
-                </li>
-                <li class="page-item disabled">
-                    <a class="page-link" href="javascript:void(0);">بعدی</a>
-                </li>
-            </ul>
 
 
         </div>
     </div>
-
     <!-- End::app-content -->
 
     <!-- Start::main-footer -->
@@ -638,31 +607,31 @@
 <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
 
 <!-- Popper JS -->
-<script src="/assets/admin/js/popper.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/popper.min.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="/assets/admin/js/bootstrap.bundle.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/bootstrap.bundle.min.js"></script>
 
 <!-- Defaultmenu JS -->
-<script src="/assets/admin/js/defaultmenu.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/defaultmenu.js"></script>
 
 <!-- Node Waves JS -->
-<script src="/assets/admin/js/waves.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/waves.min.js"></script>
 
 <!-- Sticky JS -->
-<script src="/assets/admin/js/sticky.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/sticky.js"></script>
 
 <!-- Color Picker JS -->
-<script src="/assets/admin/js/pickr.es5.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/pickr.es5.min.js"></script>
 
 <!-- Date & Time Picker JS -->
-<script src="/assets/admin/js/flatpickr.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/flatpickr.min.js"></script>
 
 <!-- Custom-Switcher JS -->
-<script src="/assets/admin/js/custom-switcher.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom-switcher.js"></script>
 
 <!-- Custom JS -->
-<script src="/assets/admin/js/custom.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {

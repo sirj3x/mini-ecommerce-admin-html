@@ -7,8 +7,9 @@
         data-header-styles="light"
         data-menu-styles="light"
         dir="rtl"
+        data-vertical-style="overlay"
         loader="enable"
-        data-vertical-style="overlay">
+>
 <head>
     <!-- Meta Data -->
     <meta charset="UTF-8">
@@ -17,52 +18,50 @@
 
     <title>
         پنل مدیریت
-        | جزییات سفارش #123456789
+        | جزئیات سفارش
     </title>
 
-    <meta name="csrf-token" content="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM">
-
     <!-- Favicon -->
-    <link rel="icon" href="/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://127.0.0.1:8000/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
 
     <!-- Start::Styles -->
 
     <!-- Choices JS -->
-    <script src="/assets/admin/js/choices.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/choices.min.js"></script>
 
     <!-- Main Theme Js -->
-    <script src="/assets/admin/js/main.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/main.js"></script>
 
-    <link href="/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
 
     <!-- Style Css -->
-    <link href="/assets/admin/css/styles.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/styles.css" rel="stylesheet">
 
     <!-- Icons Css -->
-    <link href="/assets/admin/css/icons.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/icons.css" rel="stylesheet">
 
     <!-- Node Waves Css -->
-    <link href="/assets/admin/css/waves.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/waves.min.css" rel="stylesheet">
 
     <!-- Simplebar Css -->
-    <link href="/assets/admin/css/simplebar.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/simplebar.min.css" rel="stylesheet">
 
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href="/assets/admin/css/nano.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/nano.min.css">
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href="/assets/admin/css/choices.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/choices.min.css">
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/flatpickr.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/flatpickr.min.css">
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/autoComplete.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/autoComplete.css">
 
     <!-- Prism CSS -->
-    <link rel="stylesheet" href="/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
 
-    <link rel="stylesheet" href="/assets/admin/plugins/dropzone/dropzone.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/dropzone/dropzone.css">
 
     <!-- Persian Datepicker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
@@ -75,8 +74,8 @@
 <body class="">
 
 <!-- Loader -->
-<div id="loader" class="d-none">
-    <img src="/assets/admin/images/media/loader.svg" alt="">
+<div id="loader">
+    <img src="http://127.0.0.1:8000/assets/admin/images/media/loader.svg" alt="">
 </div>
 <!-- Loader -->
 
@@ -125,14 +124,16 @@
                 <!-- Start::header-element -->
                 <div class="header-element header-search d-md-block d-none my-auto">
                     <div>
-                        <h1 class="page-title fw-medium fs-18 mb-2">جزئیات سفارش</h1>
-                        <div class="">
-                            <nav>
-                                <ol class="breadcrumb mb-0">
-                                    <li class="breadcrumb-item"><a href="#">سفارشات</a></li>
-                                    <li class="breadcrumb-item active">سفارش #123456789</li>
-                                </ol>
-                            </nav>
+                        <div>
+                            <h1 class="page-title fw-medium fs-18 mb-2">جزئیات سفارش</h1>
+                            <div class="">
+                                <nav>
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">مدیریت سفارشات</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">جزئیات سفارش</li>
+                                    </ol>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,22 +201,10 @@
                         <li class="p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <p class="mb-0 fw-semibold lh-1">مرتضی مهدی زاده</p>
-                                    <span class="fs-11 text-muted">mrking0151@gmail.com</span>
+                                    <p class="mb-0 fw-semibold lh-1">Admin Admin</p>
+                                    <span class="fs-11 text-muted">admin@gmail.com</span>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center px-3" href="/">
-                                <i class="ri-user-line fs-15 me-2 text-gray fw-normal"></i>
-                                اطلاعات پروفایل
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center px-3" href="/">
-                                <i class="ri-user-settings-line fs-15 me-2 text-gray fw-normal"></i>
-                                تنظیمات
-                            </a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
@@ -223,8 +212,10 @@
                         <li>
                             <a class="dropdown-item d-flex align-items-center text-danger px-3"
                                href="http://127.0.0.1:8000/admin/auth/logout">
-                                <i class="ri-logout-circle-line fs-15 me-2 text-danger fw-normal"
-                                   style="position: relative; top: -2px"></i>
+                                <i
+                                        class="ri-logout-circle-line fs-15 me-2 text-danger fw-normal"
+                                        style="position: relative; top: -2px"
+                                ></i>
                                 خروج
                             </a>
                         </li>
@@ -276,8 +267,8 @@
                                     </div>
                                     <ul class="main-menu mx-0">
                                         <!-- Start::slide -->
-                                        <li class="slide ">
-                                            <a href="http://127.0.0.1:8000/admin"
+                                        <li class="slide active">
+                                            <a href="http://127.0.0.1:8000/admin/dashboard"
                                                class="side-menu__item ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="1em"
                                                      height="1em" viewBox="0 0 24 24">
@@ -312,7 +303,7 @@
                                         <!-- End::slide -->
 
                                         <!-- Start::slide -->
-                                        <li class="slide active ">
+                                        <li class="slide  ">
                                             <a href="http://127.0.0.1:8000/admin/orders"
                                                class="side-menu__item active">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="1em"
@@ -416,7 +407,6 @@
     <div class="main-content app-content">
         <div class="container-fluid pt-4">
 
-
             <!-- Main Row -->
             <div class="row">
                 <div class="col-xl-8">
@@ -426,7 +416,7 @@
                             <div class="card custom-card overflow-hidden" style="padding-bottom: 6px !important;">
                                 <div class="card-header justify-content-between">
                                     <div class="card-title">خلاصه سفارش</div>
-                                    <div>کد: <span class="text-primary fw-semibold">#2</span></div>
+                                    <div>شناسه: <span class="text-primary fw-semibold">2</span></div>
                                 </div>
                                 <div class="card-body p-0 table-responsive">
                                     <table class="table">
@@ -435,24 +425,32 @@
                                             <td>
                                                 <div class="fw-semibold">تعداد کالا:</div>
                                             </td>
-                                            <td>2</td>
+                                            <td>1</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="fw-semibold">هزینه ارسال:</div>
+                                                <div class="fw-semibold">وضعیت سفارش:</div>
                                             </td>
-                                            <td> 0 تومان</td>
+                                            <td>
+                                                <span class="text-info">در حال پردازش</span>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-bottom: 0;">
+                                            <td>
                                                 <div class="fw-semibold">مبلغ کل:</div>
                                             </td>
-                                            <td style="border-bottom: 0;">
+                                            <td>
                                                 <span class="fw-medium">
-                                                    5,200,000
+                                                    79,000
                                                     تومان
                                                 </span>
                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-bottom: 0;">
+                                                <div class="fw-semibold">توضیحات:</div>
+                                            </td>
+                                            <td style="border-bottom: 0;"></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -467,89 +465,25 @@
                                     <div class="card-title">آدرس تحویل</div>
                                 </div>
                                 <div class="card-body">
-                                    <p>ساری, بلوار خزر,دریای 2, کوچه بغلی</p>
-                                    <p><strong>گیرنده:</strong> مرتضی مهدی زاده</p>
-                                    <p><strong>شماره تماس:</strong> 09333678142</p>
+                                    <p>
+                                        <strong>آدرس:</strong>
+                                        مازندران
+                                        -
+                                        ساری
+                                        -
+                                        تست
+                                    </p>
+                                    <p>
+                                        <strong>شماره تماس:</strong>
+                                        01133132166
+                                    </p>
+                                    <p>
+                                        <strong>کد پستی:</strong>
+                                        4849176981
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Order Card -->
-                    <div class="card custom-card">
-                        <div class="card-header d-flex justify-content-between">
-                            <div class="card-title">
-                                شماره سفارش - <span class="text-primary">#123456789</span>
-                            </div>
-                            <div>
-                            <span class="badge bg-primary-transparent">
-                                تاریخ سفارش: 22 مرداد 1404
-                            </span>
-                            </div>
-                        </div>
-
-                        <div class="card-body p-0">
-                            <div class="table-responsive">
-                                <table class="table text-nowrap">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">مورد</th>
-                                        <th scope="col">کد پیگیری</th>
-                                        <th scope="col">قیمت</th>
-                                        <th scope="col">تعداد</th>
-                                        <th scope="col">قیمت کل</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="me-3">
-                                                        <span class="avatar avatar-xl bg-primary-transparent">
-                                                            <img src="/assets/admin/images/product-default-image.png" alt="Product Image">
-                                                        </span>
-                                                </div>
-                                                <div>
-                                                    <div class="mb-1 fs-14 fw-medium">
-                                                        <a href="javascript:void(0);">
-                                                            گوشی اپل iPhone 16 CH رجیستر‌شده دو سیم‌کارت 128 گیگابایت با رم 8 گیگابایت
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-primary">123456789</td>
-                                        <td>500,000 تومان</td>
-                                        <td>5</td>
-                                        <td>12,500,000 تومان</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="me-3">
-                                                        <span class="avatar avatar-xl bg-primary-transparent">
-                                                            <img src="/assets/admin/images/product-default-image.png" alt="Product Image">
-                                                        </span>
-                                                </div>
-                                                <div>
-                                                    <div class="mb-1 fs-14 fw-medium">
-                                                        <a href="javascript:void(0);">
-                                                            لپ تاپ asus مدل rog
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-primary">123456789</td>
-                                        <td>5,000 تومان</td>
-                                        <td>2</td>
-                                        <td>20,000 تومان</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
@@ -562,12 +496,71 @@
                             <div class="card-title">مشخصات کاربر</div>
                         </div>
                         <div class="card-body">
-                            <p><strong>نام:</strong> مرتضی مهدی زاده</p>
-                            <p><strong>ایمیل:</strong> mrking0151@gmail.com</p>
-                            <p><strong>موبایل:</strong> 09333678142</p>
+                            <p><strong>نام:</strong> مهدی هاشمی</p>
+                            <p><strong>ایمیل:</strong> sirj3x@gmail.com</p>
+                            <p><strong>موبایل:</strong> 09359953331</p>
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div>
+                    <!-- Order Card -->
+                    <div class="card custom-card">
+                        <div class="card-header d-flex justify-content-between">
+                            <div class="card-title">
+                                محصولات سفارش
+                            </div>
+                            <div>
+                            <span class="badge bg-primary-transparent">
+                                تاریخ سفارش:
+                                11:34 1404/07/24
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">محصول</th>
+                                        <th scope="col">قیمت</th>
+                                        <th scope="col">تعداد</th>
+                                        <th scope="col">مبلغ نهایی</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <div class="mb-1 fs-14 fw-medium">
+                                                        <span>
+                                                            رمان | Novel
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            80,000
+                                            تومان
+                                        </td>
+                                        <td>1</td>
+                                        <td>
+                                            80,000
+                                            تومان
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -602,31 +595,31 @@
 <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
 
 <!-- Popper JS -->
-<script src="/assets/admin/js/popper.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/popper.min.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="/assets/admin/js/bootstrap.bundle.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/bootstrap.bundle.min.js"></script>
 
 <!-- Defaultmenu JS -->
-<script src="/assets/admin/js/defaultmenu.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/defaultmenu.js"></script>
 
 <!-- Node Waves JS -->
-<script src="/assets/admin/js/waves.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/waves.min.js"></script>
 
 <!-- Sticky JS -->
-<script src="/assets/admin/js/sticky.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/sticky.js"></script>
 
 <!-- Color Picker JS -->
-<script src="/assets/admin/js/pickr.es5.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/pickr.es5.min.js"></script>
 
 <!-- Date & Time Picker JS -->
-<script src="/assets/admin/js/flatpickr.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/flatpickr.min.js"></script>
 
 <!-- Custom-Switcher JS -->
-<script src="/assets/admin/js/custom-switcher.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom-switcher.js"></script>
 
 <!-- Custom JS -->
-<script src="/assets/admin/js/custom.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {

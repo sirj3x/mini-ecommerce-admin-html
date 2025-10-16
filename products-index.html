@@ -7,8 +7,9 @@
         data-header-styles="light"
         data-menu-styles="light"
         dir="rtl"
+        data-vertical-style="overlay"
         loader="enable"
-        data-vertical-style="overlay">
+>
 <head>
     <!-- Meta Data -->
     <meta charset="UTF-8">
@@ -17,52 +18,50 @@
 
     <title>
         پنل مدیریت
-        | محصولات
+        | لیست محصولات
     </title>
 
-    <meta name="csrf-token" content="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM">
-
     <!-- Favicon -->
-    <link rel="icon" href="/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://127.0.0.1:8000/assets/admin/images/brand-logos/favicon.ico" type="image/x-icon">
 
     <!-- Start::Styles -->
 
     <!-- Choices JS -->
-    <script src="/assets/admin/js/choices.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/choices.min.js"></script>
 
     <!-- Main Theme Js -->
-    <script src="/assets/admin/js/main.js"></script>
+    <script src="http://127.0.0.1:8000/assets/admin/js/main.js"></script>
 
-    <link href="/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
 
     <!-- Style Css -->
-    <link href="/assets/admin/css/styles.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/styles.css" rel="stylesheet">
 
     <!-- Icons Css -->
-    <link href="/assets/admin/css/icons.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/icons.css" rel="stylesheet">
 
     <!-- Node Waves Css -->
-    <link href="/assets/admin/css/waves.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/waves.min.css" rel="stylesheet">
 
     <!-- Simplebar Css -->
-    <link href="/assets/admin/css/simplebar.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/assets/admin/css/simplebar.min.css" rel="stylesheet">
 
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href="/assets/admin/css/nano.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/nano.min.css">
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href="/assets/admin/css/choices.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/choices.min.css">
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/flatpickr.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/flatpickr.min.css">
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href="/assets/admin/css/autoComplete.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/css/autoComplete.css">
 
     <!-- Prism CSS -->
-    <link rel="stylesheet" href="/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/prismjs/themes/prism-coy.min.css">
 
-    <link rel="stylesheet" href="/assets/admin/plugins/dropzone/dropzone.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/admin/plugins/dropzone/dropzone.css">
 
     <!-- Persian Datepicker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
@@ -75,8 +74,8 @@
 <body class="">
 
 <!-- Loader -->
-<div id="loader" class="d-none">
-    <img src="/assets/admin/images/media/loader.svg" alt="">
+<div id="loader">
+    <img src="http://127.0.0.1:8000/assets/admin/images/media/loader.svg" alt="">
 </div>
 <!-- Loader -->
 
@@ -125,14 +124,16 @@
                 <!-- Start::header-element -->
                 <div class="header-element header-search d-md-block d-none my-auto">
                     <div>
-                        <h1 class="page-title fw-medium fs-18 mb-2">لیست محصولات</h1>
                         <div>
-                            <nav>
-                                <ol class="breadcrumb mb-0">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">محصولات</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">لیست محصولات</li>
-                                </ol>
-                            </nav>
+                            <h1 class="page-title fw-medium fs-18 mb-2">لیست محصولات</h1>
+                            <div class="">
+                                <nav>
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">مدیریت محصولات</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">لیست محصولات</li>
+                                    </ol>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,22 +201,10 @@
                         <li class="p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <p class="mb-0 fw-semibold lh-1">مرتضی مهدی زاده</p>
-                                    <span class="fs-11 text-muted">mrking0151@gmail.com</span>
+                                    <p class="mb-0 fw-semibold lh-1">Admin Admin</p>
+                                    <span class="fs-11 text-muted">admin@gmail.com</span>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center px-3" href="/">
-                                <i class="ri-user-line fs-15 me-2 text-gray fw-normal"></i>
-                                اطلاعات پروفایل
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center px-3" href="/">
-                                <i class="ri-user-settings-line fs-15 me-2 text-gray fw-normal"></i>
-                                تنظیمات
-                            </a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
@@ -223,8 +212,10 @@
                         <li>
                             <a class="dropdown-item d-flex align-items-center text-danger px-3"
                                href="http://127.0.0.1:8000/admin/auth/logout">
-                                <i class="ri-logout-circle-line fs-15 me-2 text-danger fw-normal"
-                                   style="position: relative; top: -2px"></i>
+                                <i
+                                        class="ri-logout-circle-line fs-15 me-2 text-danger fw-normal"
+                                        style="position: relative; top: -2px"
+                                ></i>
                                 خروج
                             </a>
                         </li>
@@ -276,8 +267,8 @@
                                     </div>
                                     <ul class="main-menu mx-0">
                                         <!-- Start::slide -->
-                                        <li class="slide ">
-                                            <a href="http://127.0.0.1:8000/admin"
+                                        <li class="slide active">
+                                            <a href="http://127.0.0.1:8000/admin/dashboard"
                                                class="side-menu__item ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="1em"
                                                      height="1em" viewBox="0 0 24 24">
@@ -328,7 +319,7 @@
                                         <!-- End::slide -->
 
                                         <!-- Start::slide -->
-                                        <li class="slide active ">
+                                        <li class="slide  ">
                                             <a href="http://127.0.0.1:8000/admin/products"
                                                class="side-menu__item active">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
@@ -413,10 +404,8 @@
     <!-- End::main-sidebar -->
 
     <!-- Start::app-content -->
-
     <div class="main-content app-content">
         <div class="container-fluid pt-4">
-
 
             <div class="row">
                 <div class="col-xl-12">
@@ -425,17 +414,21 @@
                             <form method="GET" action="http://127.0.0.1:8000/admin/products">
                                 <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
 
-
                                     <div class="d-flex flex-wrap gap-1 project-list-main align-items-center">
                                         <div class="d-flex me-2">
                                             <input class="form-control me-2" type="search" name="search"
-                                                   placeholder="جستجو محصول" value=""
+                                                   placeholder="جستجو محصول"
+                                                   value=""
                                                    aria-label="جستجو">
                                             <button class="btn btn-light" type="submit">جستجو</button>
                                         </div>
 
                                         <select id="choices-single-default" class="form-control" name="sort">
                                             <option value="">مرتب‌سازی بر اساس</option>
+                                            <option
+                                                    value="newest" selected>
+                                                جدیدترین
+                                            </option>
                                             <option
                                                     value="name_asc" >
                                                 نام (صعودی)
@@ -478,206 +471,50 @@
                             <table class="table text-nowrap table-bordered">
                                 <thead>
                                 <tr>
-                                    <th>محصول</th>
-                                    <th>دسته‌بندی</th>
+                                    <th>نام</th>
+                                    <th>دسته‌ بندی</th>
                                     <th>قیمت</th>
-                                    <th>قیمت تخفیف‌خورده</th>
+                                    <th>تخفیف</th>
                                     <th>موجودی</th>
-                                    <th>وضعیت</th>
-                                    <th>منتشر شده</th>
-                                    <th>اقدامات</th>
+                                    <th>تاریخ ثبت</th>
+                                    <th>عملیات</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr class="product-list">
                                     <td>
                                         <div class="d-flex">
-                            <span class="avatar avatar-md avatar-square bg-light">
-                                <img
-                                        src="/assets/admin/images/product-default-image.png"
-                                        class="w-100 h-100" alt="لپ تاپ asus مدل rog">
-                            </span>
+                                                <span class="avatar avatar-md avatar-square bg-light">
+                                                    <img
+                                                            src="http://127.0.0.1:8000/storage/product_images/1_1759669026_63170.png"
+                                                            class="w-100 h-100" alt="گوشی هوشمند | Smartphone">
+                                                </span>
                                             <div class="ms-2">
                                                 <p class="fw-semibold mb-0 name-limit">
-                                                    <a href="javascript:void(0);">لپ تاپ asus مدل rog</a>
+                                                    <a href="http://127.0.0.1:8000/admin/products/1/show">
+                                                        گوشی هوشمند | Smartphone
+                                                    </a>
                                                 </p>
-                                                <p class="fs-12 text-muted mb-0 description-limit">هیچ توضیحی نداریم واضحه باید بخری</p>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>کالای دیجیتال</td>
-                                    <td>500,000 تومان</td>
+                                    <td>الکترونیک</td>
                                     <td>
-                                        <span class="text-success">2,000 تومان</span>
+                                        500,000
+                                        تومان
                                     </td>
-                                    <td>10</td>
                                     <td>
-                        <span
-                                class="badge bg-primary-transparent">
-                            منتشر شد
-                        </span>
+                                        50,000
+                                        تومان
                                     </td>
-                                    <td>20 مرداد 1404 - 05:46</td>
+                                    <td>
+                                        10
+                                    </td>
+                                    <td>16:13 1404/07/13</td>
 
                                     <td>
                                         <div class="hstack gap-2 fs-15">
-                                            <a href="http://127.0.0.1:8000/admin/products/9"
-                                               class="btn btn-primary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
-                                                <i class="ri-eye-line"></i>
-                                            </a>
-                                            <a href="http://127.0.0.1:8000/admin/products/9/edit"
-                                               class="btn btn-secondary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                                <i class="ti ti-pencil"></i>
-                                            </a>
-                                            <form action="http://127.0.0.1:8000/admin/products/9"
-                                                  method="POST"
-                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
-                                                <i class="ri-delete-bin-line"></i>
-                                            </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="product-list">
-                                    <td>
-                                        <div class="d-flex">
-                            <span class="avatar avatar-md avatar-square bg-light">
-                                <img
-                                        src="/assets/admin/images/product-default-image.png"
-                                        class="w-100 h-100" alt="گوشی اپل iPhone 16 CH رجیستر‌شده دو سیم‌کارت 128 گیگابایت با رم 8 گیگابایت">
-                            </span>
-                                            <div class="ms-2">
-                                                <p class="fw-semibold mb-0 name-limit">
-                                                    <a href="javascript:void(0);">گوشی اپل iPhone 16 CH رجیستر‌شده دو سیم‌کارت 128 گیگابایت با رم 8 گیگابایت</a>
-                                                </p>
-                                                <p class="fs-12 text-muted mb-0 description-limit">گوشی موبایل اپل مدل iPhone 16، به عنوان یکی از جدیدترین مدل‌های این برند معتبر، با طراحی مدرن و ویژگی‌های پیشرفته، تجربه‌ای بی‌نظیر از دنیای تکنولوژی را برای کاربران فراهم می‌کند. این گوشی با ظرفیت 128 گیگابایت و رم 8 گیگابایت، عملکردی سریع و روان را ارائه می‌دهد که به راحتی از پس کارهای روزمره و multitasking برمی‌آید. طراحی این دستگاه با دقت و ظرافت بالا انجام شده و بدنه آن از مواد با کیفیت ساخته شده است که حس لوکس بودن را به کاربر منتقل می‌کند. قابلیت پشتیبانی از دو سیم کارت، امکان استفاده همزمان از دو شماره تلفن را برای کاربران فراهم می‌کند که این ویژگی به‌خصوص برای افرادی که به دو شماره مختلف برای کار و زندگی شخصی نیاز دارند بسیار مفید است. دوربین‌های با کیفیت iPhone 16، تجربه عکاسی فوق‌العاده‌ای را ارائه می‌دهند و با فناوری‌های نوین، امکان ثبت لحظات خاص با جزئیات بالا را فراهم می‌کنند. همچنین، باتری با عمر طولانی و قابلیت‌های شارژ سریع، این اطمینان را به شما می‌دهد که می‌توانید در طول روز به راحتی از گوشی خودتان استفاده کنید. به‌طور کلی، iPhone 16 یک انتخاب عالی برای کسانی است که به دنبال ترکیبی از کیفیت، قدرت و طراحی مدرن هستند. همانطور که می‌دانید گوشی‌های آیفون با پارت نامبرهای مختلفی از جمله CH، ZAA، LLAT ZPAو ... در بازار وجود دارند. پارت نامبر CH مربوط به کشور چین است که تفاوت خاصی با دیگر پارت نامبرها ندارند و تنها در مورد استفاده از تماس‌های صوتی و تماس‌های گروهی در نرم افزار فیس تایم شامل محدودیت است. این پارت نامبر از دو سیم‌کارت فیزیکی پشتیبانی می‌کند که یک نکته مثبت محسوب می‌شود. این گوشی، مانند تمامی گوشی‌های عرضه‌شده در دیجی‌کالا، به صورت قانونی و تجاری وارد کشور شده و با رجیستر رسمی، کارت گارانتی معتبر و کد فعال‌سازی به شما تحویل داده می‌شود.</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>موبایل</td>
-                                    <td>89,999,000 تومان</td>
-                                    <td>
-                                        <span class="text-success">2,000 تومان</span>
-                                    </td>
-                                    <td>8</td>
-                                    <td>
-                        <span
-                                class="badge bg-primary-transparent">
-                            منتشر شد
-                        </span>
-                                    </td>
-                                    <td>20 مرداد 1404 - 04:16</td>
-
-                                    <td>
-                                        <div class="hstack gap-2 fs-15">
-                                            <a href="http://127.0.0.1:8000/admin/products/8"
-                                               class="btn btn-primary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
-                                                <i class="ri-eye-line"></i>
-                                            </a>
-                                            <a href="http://127.0.0.1:8000/admin/products/8/edit"
-                                               class="btn btn-secondary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                                <i class="ti ti-pencil"></i>
-                                            </a>
-                                            <form action="http://127.0.0.1:8000/admin/products/8"
-                                                  method="POST"
-                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
-                                                <i class="ri-delete-bin-line"></i>
-                                            </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="product-list">
-                                    <td>
-                                        <div class="d-flex">
-                            <span class="avatar avatar-md avatar-square bg-light">
-                                <img
-                                        src="/assets/admin/images/product-default-image.png"
-                                        class="w-100 h-100" alt="بسته شرکتی اینترنت">
-                            </span>
-                                            <div class="ms-2">
-                                                <p class="fw-semibold mb-0 name-limit">
-                                                    <a href="javascript:void(0);">بسته شرکتی اینترنت</a>
-                                                </p>
-                                                <p class="fs-12 text-muted mb-0 description-limit">این یک بسته تستی هست و اصلا اهمیتی ندارد</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>موبایل</td>
-                                    <td>5,000 تومان</td>
-                                    <td>
-                                        <span class="text-muted">-</span>
-                                    </td>
-                                    <td>1</td>
-                                    <td>
-                        <span
-                                class="badge bg-primary-transparent">
-                            منتشر شد
-                        </span>
-                                    </td>
-                                    <td>19 مرداد 1404 - 04:16</td>
-
-                                    <td>
-                                        <div class="hstack gap-2 fs-15">
-                                            <a href="http://127.0.0.1:8000/admin/products/7"
-                                               class="btn btn-primary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
-                                                <i class="ri-eye-line"></i>
-                                            </a>
-                                            <a href="http://127.0.0.1:8000/admin/products/7/edit"
-                                               class="btn btn-secondary-light btn-icon btn-sm"
-                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
-                                                <i class="ti ti-pencil"></i>
-                                            </a>
-                                            <form action="http://127.0.0.1:8000/admin/products/7"
-                                                  method="POST"
-                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
-                                                <i class="ri-delete-bin-line"></i>
-                                            </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="product-list">
-                                    <td>
-                                        <div class="d-flex">
-                            <span class="avatar avatar-md avatar-square bg-light">
-                                <img
-                                        src="/assets/admin/images/product-default-image.png"
-                                        class="w-100 h-100" alt="گوشی  به عنوان فیک موبایلin the type of shit">
-                            </span>
-                                            <div class="ms-2">
-                                                <p class="fw-semibold mb-0 name-limit">
-                                                    <a href="javascript:void(0);">گوشی  به عنوان فیک موبایلin the type of shit</a>
-                                                </p>
-                                                <p class="fs-12 text-muted mb-0 description-limit">test product</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>موبایل</td>
-                                    <td>100,000,000 تومان</td>
-                                    <td>
-                                        <span class="text-success">50,000,000 تومان</span>
-                                    </td>
-                                    <td>50</td>
-                                    <td>
-                        <span
-                                class="badge bg-primary-transparent">
-                            منتشر شد
-                        </span>
-                                    </td>
-                                    <td>10 مرداد 1404 - 10:50</td>
-
-                                    <td>
-                                        <div class="hstack gap-2 fs-15">
-                                            <a href="http://127.0.0.1:8000/admin/products/1"
+                                            <a href="http://127.0.0.1:8000/admin/products/1/show"
                                                class="btn btn-primary-light btn-icon btn-sm"
                                                data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
                                                 <i class="ri-eye-line"></i>
@@ -687,10 +524,65 @@
                                                data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
                                                 <i class="ti ti-pencil"></i>
                                             </a>
-                                            <form action="http://127.0.0.1:8000/admin/products/1"
+                                            <form action="http://127.0.0.1:8000/admin/products/1/delete"
                                                   method="POST"
-                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')">
-                                                <input type="hidden" name="_token" value="G3faz5te2OVLWMw1sn2U47RRUgVWPGJznIyOIEMM" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
+                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')"
+                                            >
+                                                <input type="hidden" name="_token" value="VofHLLAqMD1Drv23vG8MgkBtFMjNl7t6G8gfBpxL" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
+                                                <i class="ri-delete-bin-line"></i>
+                                            </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="product-list">
+                                    <td>
+                                        <div class="d-flex">
+                                                <span class="avatar avatar-md avatar-square bg-light">
+                                                    <img
+                                                            src="http://127.0.0.1:8000/storage/product_images/2_1759669097_29437.png"
+                                                            class="w-100 h-100" alt="رمان | Novel">
+                                                </span>
+                                            <div class="ms-2">
+                                                <p class="fw-semibold mb-0 name-limit">
+                                                    <a href="http://127.0.0.1:8000/admin/products/2/show">
+                                                        رمان | Novel
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>کتاب</td>
+                                    <td>
+                                        80,000
+                                        تومان
+                                    </td>
+                                    <td>
+                                        1,000
+                                        تومان
+                                    </td>
+                                    <td>
+                                        49
+                                    </td>
+                                    <td>16:13 1404/07/13</td>
+
+                                    <td>
+                                        <div class="hstack gap-2 fs-15">
+                                            <a href="http://127.0.0.1:8000/admin/products/2/show"
+                                               class="btn btn-primary-light btn-icon btn-sm"
+                                               data-bs-toggle="tooltip" data-bs-placement="top" title="مشاهده">
+                                                <i class="ri-eye-line"></i>
+                                            </a>
+                                            <a href="http://127.0.0.1:8000/admin/products/2/edit"
+                                               class="btn btn-secondary-light btn-icon btn-sm"
+                                               data-bs-toggle="tooltip" data-bs-placement="top" title="ویرایش">
+                                                <i class="ti ti-pencil"></i>
+                                            </a>
+                                            <form action="http://127.0.0.1:8000/admin/products/2/delete"
+                                                  method="POST"
+                                                  onsubmit="return confirm('آیا از حذف این محصول مطمئن هستید؟')"
+                                            >
+                                                <input type="hidden" name="_token" value="VofHLLAqMD1Drv23vG8MgkBtFMjNl7t6G8gfBpxL" autocomplete="off">                                                    <input type="hidden" name="_method" value="DELETE">                                                    <button type="submit" class="btn btn-icon btn-sm btn-danger-light">
                                                 <i class="ri-delete-bin-line"></i>
                                             </button>
                                             </form>
@@ -707,20 +599,9 @@
             <!-- End::row-2 -->
 
 
-            <ul class="pagination justify-content-end">
-                <li class="page-item disabled">
-                    <a class="page-link" href="javascript:void(0);">قبلی</a>
-                </li>
-                <li class="page-item active">
-                    <a class="page-link" href="http://127.0.0.1:8000/admin/products?page=1">1</a>
-                </li>
-                <li class="page-item disabled">
-                    <a class="page-link" href="javascript:void(0);">بعدی</a>
-                </li>
-            </ul>
+
         </div>
     </div>
-
     <!-- End::app-content -->
 
     <!-- Start::main-footer -->
@@ -751,31 +632,31 @@
 <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
 
 <!-- Popper JS -->
-<script src="/assets/admin/js/popper.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/popper.min.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="/assets/admin/js/bootstrap.bundle.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/bootstrap.bundle.min.js"></script>
 
 <!-- Defaultmenu JS -->
-<script src="/assets/admin/js/defaultmenu.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/defaultmenu.js"></script>
 
 <!-- Node Waves JS -->
-<script src="/assets/admin/js/waves.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/waves.min.js"></script>
 
 <!-- Sticky JS -->
-<script src="/assets/admin/js/sticky.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/sticky.js"></script>
 
 <!-- Color Picker JS -->
-<script src="/assets/admin/js/pickr.es5.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/pickr.es5.min.js"></script>
 
 <!-- Date & Time Picker JS -->
-<script src="/assets/admin/js/flatpickr.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/flatpickr.min.js"></script>
 
 <!-- Custom-Switcher JS -->
-<script src="/assets/admin/js/custom-switcher.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom-switcher.js"></script>
 
 <!-- Custom JS -->
-<script src="/assets/admin/js/custom.js"></script>
+<script src="http://127.0.0.1:8000/assets/admin/js/custom.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
